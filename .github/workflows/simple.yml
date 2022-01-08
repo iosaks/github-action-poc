@@ -12,3 +12,11 @@ jobs:
         run: |
           echo "Hello"
           npm -v
+  run-powershell-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Present Directory
+        run: dir
+    
