@@ -1,0 +1,13 @@
+name: Container
+
+on: push
+
+jobs:
+  docker-container-workflow:
+    runs-on: ubuntu-latest
+    container:
+      image: node:12-alpine3.14
+    steps:
+      - name: node version
+        run: |
+          node -v
